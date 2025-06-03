@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Celtic Cross Tarot Reading</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'seer-blue': {
+                light: '#7aa2f7',
+                DEFAULT: '#3d59a1',
+                dark: '#2a3f76',
+              },
+              'mystic-purple': {
+                light: '#bb9af7',
+                DEFAULT: '#7857c7',
+                dark: '#563d90',
+              },
+              'night-bg': '#1a1b26',
+              'light-text': '#c0caf5',
+              'dark-text': '#a9b1d6',
+              'card-bg': '#24283b',
+              'border-color': '#414868',
+            },
+            fontFamily: {
+              sans: ['"Inter"', 'sans-serif'],
+              serif: ['"Lora"', 'serif'],
+            },
+            animation: {
+              fadeIn: 'fadeIn 0.5s ease-out',
+              cardAppear: 'cardAppear 0.5s ease-out forwards',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: 0 },
+                '100%': { opacity: 1 },
+              },
+              cardAppear: {
+                '0%': { opacity: 0, transform: 'translateY(20px)' },
+                '100%': { opacity: 1, transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.3.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-night-bg text-light-text font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

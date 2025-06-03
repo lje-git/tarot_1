@@ -1,0 +1,4 @@
+{
+  "name": "Celtic Cross Tarot Reading",
+  "description": "An unbiased Celtic Cross tarot reading application that randomly draws cards first, then interprets them based on your question using Gemini API."
+}
